@@ -14,7 +14,7 @@
   
   .quicklink:focus-visible {
     border-radius: var(--border-radius-default);
-    outline: 2px solid #1275a9;
+    outline: 2px solid #006853;
     text-decoration: none;
   }
   
@@ -23,8 +23,8 @@
   }
   
   .quicklink .quicklink__title {
-    color: #454545;
-    font-size: 24px;
+    color:  #006853;
+    font-size: 18px;
     margin-bottom: 10px;
   }
   
@@ -35,7 +35,7 @@
   }
   
   .quicklink .quicklink__link {
-    color: var(--color-core-1);
+    color:  #006853;
     display: flex;
     align-items: center;
     font-size: 16px;
@@ -49,12 +49,12 @@
   }
   
   .quicklink .link svg path {
-    fill: var(--color-core-1);
+    fill:  #006853;
   }
   
   .quicklink .quicklink__icon {
-    border: 1px solid var(--color-core-1);
-    color: var(--color-core-1);
+    border: 1px solid  #006853;
+    color:  #006853;
     display: block;
     height: 16px;
     margin-bottom: 16px;
