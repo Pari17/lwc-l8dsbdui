@@ -1,0 +1,7 @@
+{
+  "name": "@wcd/pari17.lwc-l8dsbdui",
+  "version": "0.0.0",
+  "scripts": {
+    "serve": "npx wcd-cli@latest serve LpaSvUa8mfV7gGSw8cSb --open"
+  }
+}
