@@ -1,0 +1,12 @@
+{
+  "packageDirectories": [
+    {
+      "path": "src/components",
+      "default": true
+    }
+  ],
+  "name": "pp",
+  "namespace": "",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "55.0"
+}

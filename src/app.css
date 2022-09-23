@@ -1,0 +1,464 @@
+:host {
+  /*DEFINE DESIGN-SYSTEM VARIABLES*/
+
+  --color-core-1: #643694;
+  --color-core-4: #532d88;
+
+  --color-background-light: #f4f4f4;
+  --color-background-medium: #eeeeee;
+  --color-background-dark: #111111;
+  --color-background-disabled: #c5ccd2;
+
+  --color-border-selected: #4068f0;
+  --color-notifications: #f74902;
+
+  --color-disabled: #c7c7c7;
+
+  --border-radius-default: 4px;
+
+  --box-shadow-1: 0px 1px 2px rgba(13, 14, 15, 0.08),
+    0px 4px 8px rgba(13, 14, 15, 0.12);
+  --box-shadow-2: 0px 1px 4px rgba(13, 14, 15, 0.06),
+    0px 6px 16px rgba(13, 14, 15, 0.08);
+
+  --button-line-height: 42px;
+
+  --default-shadow-focus: 0 0 3px var(--color-core-1);
+
+  /*--font-family-default: 'Rubik';*/
+  --font-family-header: "Montserrat";
+
+  /*OVERWRITE SLDS STYLE HOOKS AND TOKENS*/
+
+  /*Unofficial css tokens - check these before every release*/
+  --lwc-brandAccessible: var(--color-core-1);
+  --lwc-brandAccessibleActive: var(--color-core-1);
+  --lwc-shadowButtonFocus: var(--default-shadow-focus);
+  --lwc-colorBorderInputActive: var(--color-core-1);
+  --lwc-heightInput: 42px;
+
+  /*Officially supported style hooks - don't worry about these*/
+  --slds-c-button-text-color: var(--color-core-1);
+  --slds-c-button-shadow-focus: var(--default-shadow-focus);
+  --slds-c-button-line-height: var(--button-line-height);
+
+  --slds-c-input-shadow: unset;
+  --slds-c-input-shadow-focus: 0 0 3px var(--color-core-1);
+  --slds-c-input-color-background: unset;
+  --slds-c-input-color-background-focus: unset;
+  --slds-c-input-color-border: unset;
+  --slds-c-input-color-border-focus: var(--color-core-1);
+  --slds-c-input-text-color: unset;
+  --slds-c-input-text-color-focus: unset;
+  --slds-c-input-radius-border: var(--border-radius-default);
+  --slds-c-input-spacing-horizontal-end: unset;
+  --slds-c-input-spacing-horizontal-start: unset;
+
+  --slds-c-checkbox-shadow: unset;
+  --slds-c-checkbox-shadow-focus: 0 0 3px var(--color-core-1);
+  --slds-c-checkbox-color-background: unset;
+  --slds-c-checkbox-color-background-checked: unset;
+  --slds-c-checkbox-color-border: unset;
+  --slds-c-checkbox-color-border-checked: unset;
+  --slds-c-checkbox-color-border-focus: var(--color-core-1);
+  --slds-c-checkbox-mark-color-foreground: unset;
+  --slds-c-checkbox-radius-border: unset;
+
+  --slds-c-checkbox-toggle-shadow-focus: var(--default-shadow-focus);
+
+  /*--slds-c-textarea-shadow: unset;*/
+  --slds-c-textarea-shadow-focus: var(--default-shadow-focus);
+  --slds-c-textarea-color-background: unset;
+  --slds-c-textarea-color-background-error-focus: unset;
+  --slds-c-textarea-color-background-focus: unset;
+  --slds-c-textarea-color-border: unset;
+  --slds-c-textarea-color-border-focus: var(--color-core-1);
+  --slds-c-textarea-text-color: unset;
+  --slds-c-textarea-text-color-error-focus: unset;
+  --slds-c-textarea-text-color-focus: unset;
+  --slds-c-textarea-radius-border: unset;
+  --slds-c-textarea-sizing-min-height: unset;
+  --slds-c-textarea-spacing-block-end: unset;
+  --slds-c-textarea-spacing-block-start: unset;
+  --slds-c-textarea-spacing-inline-end: unset;
+  --slds-c-textarea-spacing-inline-start: unset;
+
+  --size-xxx-small: 4px;
+  --size-xx-small: 8px;
+  --size-x-small: 16px;
+  --size-small: 24px;
+  --size-base: 32px;
+  --size-medium: 48px;
+  --size-large: 64px;
+  --size-x-large: 72px;
+  --size-xx-large: 96px;
+}
+
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+template {
+  display: none;
+}
+
+a {
+  background-color: transparent;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  border: 0;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+pre {
+  overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+::-webkit-input-placeholder {
+  color: #706e6b;
+  font-weight: 400;
+}
+
+::-moz-placeholder {
+  color: #706e6b;
+  font-weight: 400;
+}
+
+:-ms-input-placeholder {
+  color: #706e6b;
+  font-weight: 400;
+}
+
+::-ms-input-placeholder {
+  color: #706e6b;
+  font-weight: 400;
+}
+
+::placeholder {
+  color: #706e6b;
+  font-weight: 400;
+}
+
+::-moz-selection {
+  background: #d8edff;
+  text-shadow: none;
+  color: #080707;
+}
+
+::selection {
+  background: #d8edff;
+  text-shadow: none;
+  color: #080707;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+dl,
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+dd,
+figure {
+  margin: 0;
+}
+
+abbr[title] {
+  text-decoration: none;
+}
+
+abbr[title],
+fieldset,
+hr {
+  border: 0;
+}
+
+hr {
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  color: #006dcc;
+  text-decoration: none;
+  -webkit-transition: color 0.1s linear;
+  transition: color 0.1s linear;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+  color: #005fb2;
+}
+a:active {
+  color: #005fb2;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+b,
+strong,
+dfn {
+  font-weight: 700;
+}
+
+mark {
+  background-color: #fff03f;
+  color: #080707;
+}
+
+abbr[title] {
+  cursor: help;
+}
+
+input[type="search"] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+table {
+  width: 100%;
+}
+
+caption,
+th,
+td {
+  text-align: left;
+}
+
+hr {
+  display: block;
+  margin: 2rem 0;
+  border-top: 1px solid #dddbda;
+  height: 1px;
+  clear: both;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.app {
+  background-color: #fff;
+  height: 100vh;
+  overflow: scroll;
+}

@@ -1,0 +1,63 @@
+.quicklink {
+    background: #ffffff;
+    border: 1px solid transparent;
+    border-radius: var(--border-radius-default);
+    display: block;
+    padding: 16px;
+    text-align: left;
+  }
+  
+  .quicklink:hover {
+    border: 1px solid #8c8c8c;
+    text-decoration: none;
+  }
+  
+  .quicklink:focus-visible {
+    border-radius: var(--border-radius-default);
+    outline: 2px solid #1275a9;
+    text-decoration: none;
+  }
+  
+  .quicklink span {
+    display: block;
+  }
+  
+  .quicklink .quicklink__title {
+    color: #454545;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .quicklink .quicklink__body {
+    color: #222222;
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  
+  .quicklink .quicklink__link {
+    color: var(--color-core-1);
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .quicklink .quicklink__link svg {
+    height: 16px;
+    margin-left: 11px;
+    width: 16px;
+  }
+  
+  .quicklink .link svg path {
+    fill: var(--color-core-1);
+  }
+  
+  .quicklink .quicklink__icon {
+    border: 1px solid var(--color-core-1);
+    color: var(--color-core-1);
+    display: block;
+    height: 16px;
+    margin-bottom: 16px;
+    width: 16px;
+  }
+  

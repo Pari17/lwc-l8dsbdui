@@ -1,0 +1,102 @@
+<template>
+  <div class="app slds-p-around_x-large">
+    <h1>Tile</h1>
+    <c-c-tile
+      title="Tile header"
+      body="Tile body"
+      cta="https://www.google.com/"
+      label="Tile CTA Label"
+    >
+    </c-c-tile>
+    <br />
+    <c-c-tile
+      icon
+      title="Aliquet sodales integer."
+      cta="https://www.google.com/"
+      label="Tile CTA Label"
+      newtab
+    >
+    </c-c-tile>
+    
+    <c-c-quicklink
+    icon
+    title="Budget Builder"
+    cta="https://www.google.com/"
+    label="Quicklink CTA Label"
+    newtab
+    >
+    </c-c-quicklink>
+
+    <hr />
+
+    <h1>Tag</h1>
+    <c-c-tag status="green">Status tag (green)</c-c-tag>
+    <br />
+    <c-c-tag status="red">Status tag (red)</c-c-tag>
+
+    <hr />
+
+    <h1>Avatar PP-459</h1>
+    <c-c-avatar name="Lorem Ipsum Dolor"></c-c-avatar>
+    <br />
+    <c-c-avatar
+      name="Lorem Ipsum Dolor"
+      imgsrc="https://via.placeholder.com/150x150"
+    ></c-c-avatar>
+
+    <hr />
+
+    <h1>CTA type link</h1>
+    <c-c-cta url="https://www.google.com/" text="Link">Link</c-c-cta>
+    <br />
+    <c-c-cta url="https://www.google.com/" newtab>Link (opens new tab)</c-c-cta>
+    <br />
+    <c-c-cta url="https://www.google.com/" icon>Link with icon</c-c-cta>
+    <br />
+    <c-c-cta url="https://www.google.com/" icon disabled
+      >Link with icon (disabled)</c-c-cta
+    >
+
+    <hr />
+
+    <h1>CTA type button (Primary)</h1>
+    <c-c-cta>Button</c-c-cta>
+    <br />
+    <c-c-cta icon>Button with icon</c-c-cta>
+    <br />
+    <c-c-cta icon iconleft>Button with icon (left)</c-c-cta>
+    <br />
+    <c-c-cta icon icononly>Button with icon</c-c-cta>
+    <br />
+    <c-c-cta icon disabled>Button with icon (disabled)</c-c-cta>
+    <br />
+
+    <h1>CTA type button (secondary)</h1>
+    <c-c-cta secondary>Button</c-c-cta>
+    <br />
+    <c-c-cta secondary icon>Button with icon</c-c-cta>
+    <br />
+    <c-c-cta secondary icon iconleft>Button with icon (left)</c-c-cta>
+    <br />
+    <c-c-cta secondary icon icononly>Button with icon</c-c-cta>
+    <br />
+    <c-c-cta secondary icon disabled>Button with icon (disabled)</c-c-cta>
+    <br />
+
+    <hr />
+
+    <h1>CTA type Ghost</h1>
+    <c-c-cta ghost>Ghost Button</c-c-cta>
+    <br />
+    <c-c-cta ghost icon>Ghost Button with icon</c-c-cta>
+    <br />
+    <c-c-cta ghost icon iconleft>Ghost Button with icon (left)</c-c-cta>
+    <br />
+    <c-c-cta ghost icon icononly>Ghost Button with icon</c-c-cta>
+    <br />
+    <c-c-cta ghost icon disabled>Ghost Button with icon (disabled)</c-c-cta>
+    <br />
+
+    <hr />
+  </div>
+</template>

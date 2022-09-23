@@ -1,0 +1,12 @@
+<template>
+    <a class={classes} href={url} if:true={url} target={tabProp}>
+        <slot></slot>
+        <span class="icon" if:true={iconProperties}></span>
+    </a>
+
+    <button class={classes} type="button" if:false={url} disabled={isDisabled}>
+        <span class="icon" if:true={isLeftIcon}></span>
+        <span class={isIconOnly}><slot></slot></span>
+        <span class="icon" if:true={iconProperties}></span>
+    </button>
+</template>

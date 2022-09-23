@@ -1,0 +1,19 @@
+.tag {
+  align-items: center;
+  border: 1px solid #8c8c8c;
+  border-radius: 16px;
+  color: #454545;
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 4px 10px;
+  justify-content: space-between;
+}
+
+.tag.-green {
+  border-color: #24a148;
+}
+
+.tag.-red {
+  border-color: #f74902;
+}
