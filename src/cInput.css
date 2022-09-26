@@ -1,0 +1,9 @@
+.lgc-bg {
+    background-color:white;
+    border-radius:var(--border-radius-default);  
+}
+
+
+.lgc-bg-inverse {
+    background-color: #a4e0ef;
+}

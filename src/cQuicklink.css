@@ -1,14 +1,21 @@
 .quicklink {
-    background: #ffffff;
-    border: 1px solid transparent;
-    border-radius: var(--border-radius-default);
-    display: block;
-    padding: 16px;
-    text-align: left;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #eef0f1;
+  box-shadow: 0px 1px 4px rgba(13, 14, 15, 0.06),
+    0px 6px 16px rgba(13, 14, 15, 0.08);
+  border-radius: 20px;
+  color: #454545;
+  display: flex;
+  font-size: 25px;
+  flex-direction: row;
+  padding: 10px;
+  height: 150px;
+  width: 230px
   }
   
   .quicklink:hover {
-    border: 1px solid #8c8c8c;
+    border: 1px solid transparent;
     text-decoration: none;
   }
   
@@ -22,30 +29,20 @@
     display: block;
   }
   
-  .quicklink .quicklink__title {
-    color:  #006853;
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .quicklink .quicklink__body {
-    color: #222222;
-    font-size: 16px;
-    margin-bottom: 25px;
-  }
-  
   .quicklink .quicklink__link {
     color:  #006853;
     display: flex;
     align-items: center;
-    font-size: 16px;
+    font-size: 25px;
     font-weight: 500;
   }
   
   .quicklink .quicklink__link svg {
-    height: 16px;
+    height: 30px;
     margin-left: 11px;
-    width: 16px;
+    width: 30px;
+    color:  #006853;
+    position:relative; left:50px; 
   }
   
   .quicklink .link svg path {
@@ -53,6 +50,7 @@
   }
   
   .quicklink .quicklink__icon {
+    position:relative; left:15px; top:-38px;
     border: 1px solid  #006853;
     color:  #006853;
     display: block;

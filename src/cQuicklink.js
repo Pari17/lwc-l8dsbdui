@@ -1,8 +1,6 @@
 import { LightningElement, api } from "lwc";
 
 export default class CQuicklink extends LightningElement {
-  @api title = "Quicklink Title";
-  @api body = "Quicklink Body";
   @api cta = "Quicklink CTA";
   @api label = "Quicklink CTA Label";
   @api icon = "";
